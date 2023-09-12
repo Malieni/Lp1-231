@@ -1,6 +1,12 @@
-packege semana18;
+import java.time.LocalDate;
+
+import semana18.ContaCorrente;
+
+
 public class ClasseAbstrata {
 public abstract class Conta {
+    public Conta(int numero2, double tarifa2, Correntista correntista2) {
+    }
     private int numero;
     private LocalDate dataAbertura;
     protected double saldo;

@@ -1,11 +1,16 @@
 package semana18;
 
+import semana18.MultiplaEscolha;
+import semana18.Prova;
+import semana18.UnicaEscolha;
+import semana18.VerdadeiroFalso;
+
 public class TesteProva {
     public static void main(String[] args) {
        
-        Questao questaoVF = new VerdadeiroFalso(1, "Java é uma linguagem de programação.", true);
-        Questao questaoUE = new UnicaEscolha(2, "Qual é o resultado de 2 + 2?", new String[]{"4", "3", "5", "6"});
-        Questao questaoME = new MultiplaEscolha(3, "Quais são os números primos?", new String[]{"a) 2", "b) 4", " c) 5", " d) 6"}, new int[]{0, 2});
+        VerdadeiroFalso questaoVF = new VerdadeiroFalso(1, "Java é uma linguagem de programação.", true);
+        UnicaEscolha questaoUE = new UnicaEscolha(2, "Qual é o resultado de 2 + 2?", new String[]{"4", "3", "5", "6"});
+        MultiplaEscolha questaoME = new MultiplaEscolha(3, "Quais são os números primos?", new String[]{"a) 2", "b) 4", " c) 5", " d) 6"}, new int[]{0, 2});
 
         
         Questao[] questoes = {questaoVF, questaoUE, questaoME};

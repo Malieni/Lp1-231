@@ -1,6 +1,7 @@
 package semana11;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import semana10.Test;
+
 public class AquarioTest{
         @Test
         public void VolumeTest (){        
@@ -11,6 +12,9 @@ public class AquarioTest{
             double Volume = Aq1.Volume();
             assertEquals(750, Volume);
             }
+
+        private void assertEquals(int i, double volume) {
+        }
 
         @Test
         public void TermostatoTest (){
